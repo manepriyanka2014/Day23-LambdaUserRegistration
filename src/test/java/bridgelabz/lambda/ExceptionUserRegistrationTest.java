@@ -39,5 +39,4 @@ public class ExceptionUserRegistrationTest {
         Assert.assertTrue(exceptionUserRegistration.testPassword(password));
     }
 }
-
   

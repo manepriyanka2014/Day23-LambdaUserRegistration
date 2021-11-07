@@ -3,9 +3,6 @@ package bridgelabz.lambda;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class TestEmailIds {
     public String regex;
     //     "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com",
