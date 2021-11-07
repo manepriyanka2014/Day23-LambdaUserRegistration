@@ -19,4 +19,5 @@ public class MoodAnalyserTest {
         String actualResult = moodAnalyser.analyseMood("User is Sad");
         Assert.assertEquals("Entry Failed", actualResult);
     }
+
 }
