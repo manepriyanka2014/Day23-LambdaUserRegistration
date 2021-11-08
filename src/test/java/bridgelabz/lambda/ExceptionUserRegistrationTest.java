@@ -11,74 +11,74 @@ public class ExceptionUserRegistrationTest {
 
     @Test
     public void givenFirstName_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.firstName("Ramakrishna");
+        boolean actualResult = exceptionUserRegistration.firstName("Priyanka");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenFirstName_IsProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.firstName("RamaKrishna");
+        boolean actualResult = exceptionUserRegistration.firstName("Priyanka");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenLastName_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.lastName("Velisetti");
+        boolean actualResult = exceptionUserRegistration.lastName("Mane");
         Assert.assertEquals(true, actualResult);
     }
 
 
     @Test
     public void givenLastName_IsProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.lastName("VeLiseTTi");
+        boolean actualResult = exceptionUserRegistration.lastName("Mane");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenEmailId_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.emailId("ramakrishna96.velisetti@gmail.com");
+        boolean actualResult = exceptionUserRegistration.emailId("manepriyanka2014@gmail.com");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenEmailId_IsNotProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.emailId("ramakrishna96.velisettigmail.com");
+        boolean actualResult = exceptionUserRegistration.emailId("manepriyanka2014@gmail.com");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenMobileNumber_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.mobileNumber("91 9989774456");
+        boolean actualResult = exceptionUserRegistration.mobileNumber("91 8329881467");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenMobileNumber_IsNotProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.mobileNumber("919989774456");
+        boolean actualResult = exceptionUserRegistration.mobileNumber("91 8329881467");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenPasswordRule1_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.passwordRule1("qwgthjkdl");
+        boolean actualResult = exceptionUserRegistration.passwordRule1("asdfghjkl");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenPasswordRule1_IsNotProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.passwordRule1("jnsdsjRcvc");
+        boolean actualResult = exceptionUserRegistration.passwordRule1("asdfghjkl");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenPasswordRule2_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.passwordRule2("qwgthRLjkdl");
+        boolean actualResult = exceptionUserRegistration.passwordRule2("qwertyuiop");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenPasswordRule2_IsNotProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.passwordRule2("jnsdjcvcp");
+        boolean actualResult = exceptionUserRegistration.passwordRule2("qwertyuiop");
         Assert.assertEquals(false, actualResult);
     }
 
@@ -90,19 +90,19 @@ public class ExceptionUserRegistrationTest {
 
     @Test
     public void givenPasswordRule3_IsNotProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.passwordRule3("jnsdjcvcp");
+        boolean actualResult = exceptionUserRegistration.passwordRule3("zxcvbnm123");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenPasswordRule4_IsProper_ReturnTrue() {
-        boolean actualResult = exceptionUserRegistration.passwordRule4("qw98hRL@&dl");
+        boolean actualResult = exceptionUserRegistration.passwordRule4("zxcvbnm");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenPasswordRule4_IsNotProper_ReturnFalse() {
-        boolean actualResult = exceptionUserRegistration.passwordRule4("jsdjcvcp");
+        boolean actualResult = exceptionUserRegistration.passwordRule4("zxcvbnm");
         Assert.assertEquals(false, actualResult);
     }
 
